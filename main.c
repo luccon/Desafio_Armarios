@@ -21,6 +21,8 @@ while(1) {
   scanf(" %c",&menu);
   if(menu == '2' && armarios == 0){
     printf("Nenhum armário está ocupado.\n");
+  } else if (armarios == 255) {
+    printf("Todos os armários estão ocupados.\n");
   }
    else if (menu < '1' || menu > '3') {
     printf("Opção inválida.\n");
