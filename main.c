@@ -18,11 +18,13 @@ while(1) {
   printf("Mapa de Armarios: ");
   DecimalBinario(armarios);
   printf("\nMenu:\n[1] Ocupar armário.\n[2] Liberar armário.\n[3] Sair.\n");
-  scanf(" %c",&menu);
+  scanf("%c",&menu);
   if(menu == '2' && armarios == 0){
     printf("Nenhum armário está ocupado.\n");
+    break;
   } else if (armarios == 255) {
     printf("Todos os armários estão ocupados.\n");
+    break;
   }
    else if (menu < '1' || menu > '3') {
     printf("Opção inválida.\n");
